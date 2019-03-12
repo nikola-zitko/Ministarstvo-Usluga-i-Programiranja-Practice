@@ -1,0 +1,21 @@
+h1 {
+	font-size: 28px;
+	font-weight: 600;
+	font-stretch: expanded;
+	color: green;
+}
+
+p {
+	font-size: 26px;
+	color: red;
+}
+
+body {
+	background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+	color: white;
+	font-size: 26px;
+}
+
+.smjer li {
+	color: rgb(100, 100, 250);
+}
