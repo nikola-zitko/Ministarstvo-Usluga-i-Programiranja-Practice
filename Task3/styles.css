@@ -1,0 +1,15 @@
+th, td {
+	border: 1px solid black;
+	width: 100px;
+	height: 40px;
+	color: blue;
+}
+
+th {
+	color: red;
+	background: gray;
+}
+
+body {
+	text-align: center;
+}
