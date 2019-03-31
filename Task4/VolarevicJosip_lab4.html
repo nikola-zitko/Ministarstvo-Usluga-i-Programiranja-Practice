@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="World Wide Web Web mjesto">
+	<meta name="keywords" content="World, Wide, Web">
+	<meta name="author" content="Josip Volarević">
+	<meta http-equiv="refresh" content="60">
+	<title>Trgovina</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+<form action="action_page.php">
+  <div class="container">
+    <h1>Registracija</h1>
+    <p>Molimo ispunite formu za izradu korisničkog računa</p>
+    <hr>
+
+    <label for="email"><b>E-mail:* </b></label>
+    <input type="text" placeholder=" Email" name="email" required>
+	</br>
+
+    <label for="password"><b>Lozinka:*</b></label>
+    <input type="password" placeholder=" Lozinka" name="password" required>
+	</br>
+
+    <label for="password-repeat"><b>Ponovite unos:*</b></label>
+    <input type="password" placeholder=" Ponovljena lozinka" name="password-repeat" required>
+	</br>
+	
+    <label for="profession"><b>Vaša struka: </b></label><br>
+	<select name="profession" multiple="multiple" size=6>
+		<option value="informaticar">Informatičar</option>
+		<option value="programer">Programer</option>
+		<option value="softveras">Softveraš</option>
+		<option value="bilostadrugo">Bilo šta drugo</option>
+		<option value="falimiideja">Fali mi ideja</option>
+		<option value="loremipsum">Lorem Ipsum</option>
+	</select>
+	<br>
+	
+	<label for="dateofbirth"><b>Datum rođenja: </b></label><br>
+	<input type="date" name="dateofbirth" /><br/>
+	
+	<label for="drzava"><b>Volim najviše slastice iz: </b></label><br>
+	<datalist id="countries">
+		<option label="Hrvatska">Hrvatska</option>
+		<option label="Španjolska">Španjolska</option>
+		<option label="Portugal">Portugal</option>
+		<option label="Irska">Irska</option>
+		<option label="Norveška">Norveška</option>
+		<option label="Danska">Danska</option>
+	</datalist>
+	<input type="text" name="drzava" placeholder="Hrvatska" list="countries"/>
+	<br>
+
+	
+	<label for="sweets"><b>Slatkiši: <b></label><br>
+	<input type="radio" name="sweets" value="male" checked> Oni fini<br>
+	<input type="radio" name="sweets" value="female"> Slatki<br>
+	<input type="radio" name="sweets" value="male" checked> Šećerne trake<br>
+	<input type="radio" name="sweets" value="female"> Gumeni medvjedići<br>
+    <hr>
+
+    <p id="terms">Izrađujući ovaj račun slažete se da će vaše računalo biti korišteno za rudarenje kriptovalutama <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit">Gotov sam</button>
+  </div>
+
+  <div class="container signin">
+    <p>Već imate račun? <a href="#">Ulogirajte se</a>.</p>
+  </div>
+</form>
+
+</body>
+
+</html>
