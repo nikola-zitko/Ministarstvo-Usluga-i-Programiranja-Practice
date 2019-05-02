@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Test Web Mjesto">
+	<meta name="keywords" content="Test, Web, Mjesto">
+	<meta name="author" content="Josip Volarevic">
+	<meta http-equiv="refresh" content="60">
+	<title>Test</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        let sm = 0;
+        let product = 1;
+
+        let a = 4;
+        let b = 3;
+        const doStuff = (a, b) => { if (isFinite(a + b) && isFinite(a * b)) { sm = a + b, product = a * b}};
+        doStuff(a, b);
+
+        console.log(sm, product);
+
+        const sum = (a, b) => { console.log(+a + +b); return(+a + +b) };
+        const subtract = (a, b) => { console.log(a - b); return(a - b) };
+        const multiply = (a, b) => { console.log(a * b); return(a * b) };
+        const divide = (a, b) => { console.log(a / b); return(a / b) };
+
+        const userInput = prompt("Enter operation: ", "+");
+
+        const doOtherStuff = (a, b, op) => {
+            if (op == "+")
+                sum(a, b);
+            else if (op == "-")
+                subtract(a, b);
+            else if (op == "*")
+                multiply(a, b);
+            else
+                divide(a, b);
+        };
+        doOtherStuff(a, b, userInput);
+
+        const name = prompt("Enter name: ", "Josip");
+        const surname = prompt("Enter surname: ", "Volarevic");
+        const doEvenMoreStuff = () => {
+            const sayHi = () => console.log("Hej " + name + " " + surname + "!");
+            sayHi();
+        };
+
+        doEvenMoreStuff()();
+
+    </script>
+
+</body>
+
+</html>
